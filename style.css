@@ -372,6 +372,27 @@ img { max-width: 100%; display: block; }
 }
 .project-list strong { color: var(--text); font-weight: 600; }
 
+/* Roadmap — hướng phát triển tiếp theo của project */
+.roadmap {
+  margin: 0 0 20px; padding: 17px 19px;
+  border: 1px dashed var(--line-strong); border-radius: 13px;
+  background: color-mix(in srgb, var(--bg-soft) 45%, transparent);
+}
+.roadmap h4 {
+  font: 600 11.5px var(--font-mono); letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent-text-3);
+}
+.roadmap ol { list-style: none; display: grid; gap: 13px; margin-top: 14px; }
+.roadmap li { display: grid; grid-template-columns: 76px 1fr; gap: 12px; align-items: baseline; }
+.roadmap .stage {
+  font: 500 10.5px var(--font-mono); letter-spacing: .07em; text-transform: uppercase;
+  color: var(--accent-text-2); white-space: nowrap;
+}
+.roadmap p { color: var(--muted); font-size: 14px; line-height: 1.62; }
+.roadmap strong { color: var(--text); font-weight: 600; }
+.roadmap em { color: var(--accent-text); font-style: normal; }
+.roadmap code { font: 500 12.6px var(--font-mono); color: var(--code-str); }
+
 .project-side {
   padding: 26px 24px; border-left: 1px solid var(--line);
   background: color-mix(in srgb, var(--bg-soft) 55%, transparent);
@@ -472,6 +493,7 @@ img { max-width: 100%; display: block; }
   .topbar nav a { font-size: 12px; white-space: nowrap; }
   .hero-stats { gap: 24px; }
   .project-main { padding: 22px 20px 24px; }
+  .roadmap li { grid-template-columns: 1fr; gap: 5px; }
   .contact-links a { font-size: 12.6px; }
   .footer-inner { justify-content: center; text-align: center; }
 }
