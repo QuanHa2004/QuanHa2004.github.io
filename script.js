@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Backend Developer",
       "Java · Spring Boot",
       "REST APIs · MySQL · Redis",
-      "Docker · AWS EC2",
+      "Spring Security · JWT · Docker",
     ];
     let phraseIndex = 0;
     let charIndex = 0;

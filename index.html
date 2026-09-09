@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a0f1a" />
-  <meta name="description" content="Hà Hồng Quân — Backend Developer Intern / Fresher (Java / Spring Boot). IT graduate 2026, open to work. Spring Security, JPA, MySQL, Redis, Docker, AWS." />
+  <meta name="description" content="Hà Hồng Quân — Backend Developer Intern / Fresher (Java / Spring Boot). IT graduate 2026, open to work. Spring Security, Spring Data JPA, Hibernate, MySQL, SQL Server, Redis, Docker." />
   <title>Hà Hồng Quân — Backend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,6 +50,7 @@
           <li><strong>3.2</strong><span>GPA / 4.0</span></li>
           <li><strong>830</strong><span>TOEIC</span></li>
           <li><strong>2026</strong><span>Graduated</span></li>
+          <li><strong>2</strong><span>Projects built</span></li>
         </ul>
       </div>
 
@@ -73,7 +74,7 @@
   <span class="c-str">"core"</span>: <span class="c-val">"Java · Spring Boot"</span>,
   <span class="c-str">"auth"</span>: <span class="c-val">"Spring Security · JWT"</span>,
   <span class="c-str">"data"</span>: <span class="c-val">"MySQL · Redis · JPA"</span>,
-  <span class="c-str">"ops"</span>&nbsp;: <span class="c-val">"Docker · AWS EC2"</span>
+  <span class="c-str">"tool"</span>: <span class="c-val">"Docker · Git · Postman"</span>
 }
 <span class="c-dim">$</span> ./run.sh
 <span class="c-ok">✔ Started in 1.42s — 200 OK</span></code></pre>
@@ -126,27 +127,23 @@
         <div class="stack-grid">
           <article class="stack-card reveal">
             <header><h3>Programming</h3></header>
-            <div class="chips"><span>Java</span><span>JavaScript</span></div>
+            <div class="chips"><span>Java</span><span>JavaScript</span><span>TypeScript</span></div>
           </article>
           <article class="stack-card reveal">
             <header><h3>Backend</h3></header>
-            <div class="chips"><span>Spring Boot</span><span>Spring Security</span><span>Spring Data JPA</span><span>Hibernate</span></div>
+            <div class="chips"><span>Spring Boot</span><span>Spring Security</span><span>Spring Data JPA</span><span>Hibernate</span><span>REST API</span></div>
           </article>
           <article class="stack-card reveal">
             <header><h3>Frontend</h3></header>
-            <div class="chips"><span>ReactJS</span><span>REST API</span></div>
+            <div class="chips"><span>ReactJS</span><span>NextJS</span></div>
           </article>
           <article class="stack-card reveal">
             <header><h3>Database</h3></header>
             <div class="chips"><span>MySQL</span><span>SQL Server</span><span>Redis</span></div>
           </article>
           <article class="stack-card reveal">
-            <header><h3>DevOps &amp; Cloud</h3></header>
-            <div class="chips"><span>AWS EC2</span><span>Docker</span></div>
-          </article>
-          <article class="stack-card reveal">
             <header><h3>Tools</h3></header>
-            <div class="chips"><span>Git</span><span>Postman</span><span>CLI</span></div>
+            <div class="chips"><span>Git</span><span>Postman</span><span>Docker</span><span>CLI</span></div>
           </article>
         </div>
       </div>
@@ -168,34 +165,12 @@
               <p class="project-sub">End-to-end wholesale platform — online storefront, in-store POS and back-office in one system.</p>
             </div>
             <ul class="project-list">
-              <li>Unified an <strong>online storefront</strong>, <strong>in-store POS</strong> and back-office inventory, pricing and customer/supplier <strong>debt ledgers</strong>.</li>
-              <li>Implemented <strong>FIFO lot-based cost of goods sold</strong>, allocating each sale across purchase lots at intake price to produce per-product margin reports and expected-vs-actual weight shrinkage.</li>
-              <li>Designed the relational model and REST layer so stock, credit limits and order state stay consistent across online and POS channels — money- and permission-critical rules enforced server-side with <strong>AOP audit logging</strong>.</li>
-              <li>Integrated <strong>Spring Security + JWT in HttpOnly cookies</strong> with <strong>Redis-backed token revocation</strong>, <strong>VNPay</strong> online payments and real-time notifications over <strong>Server-Sent Events</strong> — each built independently from official English documentation.</li>
-              <li>Applied an <strong>AI-first workflow</strong> with Claude and Cursor to compare design options and generate test scenarios, reviewing every generated line before merging.</li>
-              <li>Shipped features from real operator needs — recurring standing orders and supplier due-date reminders — in a team of 2 using Git and CLI.</li>
+              <li>Unified an <strong>online storefront</strong>, <strong>in-store POS</strong> and back-office inventory, pricing and customer/supplier <strong>debt ledgers</strong> in one system.</li>
+              <li>Implemented <strong>FIFO lot-based costing</strong> — each sale allocated across purchase lots at intake price for per-product margin reports and weight shrinkage tracking.</li>
+              <li>Kept stock, credit limits and order state consistent across both channels: money- and permission-critical rules enforced server-side with <strong>AOP audit logging</strong>.</li>
+              <li>Integrated <strong>Spring Security + JWT in HttpOnly cookies</strong> with <strong>Redis token revocation</strong>, <strong>VNPay</strong> payments and real-time <strong>SSE</strong> notifications.</li>
+              <li>Built in a team of 2 with Git and CLI, using Claude and Cursor for design analysis and test generation — every generated line reviewed before merge.</li>
             </ul>
-            <div class="roadmap">
-              <h4>What&rsquo;s next</h4>
-              <ol>
-                <li>
-                  <span class="stage">Domain</span>
-                  <p><strong>Delivery &amp; returns.</strong> Address book, zone-based shipping fees and SLA delivery dates behind the <em>in delivery</em> status; returns and refunds via cash, debt credit or the VNPay refund API.</p>
-                </li>
-                <li>
-                  <span class="stage">Security</span>
-                  <p><strong>Auth hardening.</strong> Admin 2FA, Redis-backed login rate limiting, cross-device session revocation.</p>
-                </li>
-                <li>
-                  <span class="stage">Platform</span>
-                  <p><strong>Runtime config.</strong> Bank details, shipping fees and banners out of <code>.env</code> into a DB-backed admin settings screen.</p>
-                </li>
-                <li>
-                  <span class="stage">Ops</span>
-                  <p><strong>Durability.</strong> Scheduled database backups and soft-delete with restore across all entities.</p>
-                </li>
-              </ol>
-            </div>
             <div class="chips"><span>Spring Boot</span><span>ReactJS</span><span>MySQL</span><span>Redis</span><span>Spring Security</span><span>VNPay</span><span>SSE</span></div>
             <a class="button ghost small" href="https://github.com/minhquan0802/QuanLyVuaCa" target="_blank" rel="noreferrer">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -210,6 +185,37 @@
               <div><dt>Payments</dt><dd>VNPay integration</dd></div>
               <div><dt>Realtime</dt><dd>Server-Sent Events</dd></div>
               <div><dt>Team</dt><dd>2 developers · Git + CLI</dd></div>
+            </dl>
+          </aside>
+        </article>
+
+        <article class="project featured reveal">
+          <div class="project-main">
+            <div class="project-top">
+              <span class="badge alt">Personal project</span>
+              <h3>English Learning Platform</h3>
+              <p class="project-sub">A gamified self-study web app — lesson trees, hearts, XP and daily streaks, with every rule that matters graded on the server.</p>
+            </div>
+            <ul class="project-list">
+              <li>Built the <strong>gamified learning core</strong>: linear lesson trees, hearts, XP, daily streaks and <strong>4 interactive exercise types</strong>.</li>
+              <li>Enforced <strong>server-side grading</strong> and active-session validation with stripped payloads — answers never reach the browser to be tampered with.</li>
+              <li>Eliminated duplicate XP and streak awards with <strong>idempotency keys</strong> and <strong>row-level locking</strong> in atomic transactions — the same concurrency discipline I apply in Spring Boot services.</li>
+              <li>Built a <strong>role-based authoring CMS</strong> that blocks non-gradable questions, with uploads verified by <strong>content-based MIME checks</strong> and <strong>content hashing</strong>.</li>
+            </ul>
+            <div class="chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>MySQL</span><span>Idempotency</span><span>Row locking</span><span>RBAC</span></div>
+            <a class="button ghost small" href="https://github.com/QuanHa2004/HocTiengAnh" target="_blank" rel="noreferrer">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              View repository
+            </a>
+          </div>
+          <aside class="project-side">
+            <h4>Highlights</h4>
+            <dl>
+              <div><dt>Learning core</dt><dd>Lesson tree · hearts · XP · streaks</dd></div>
+              <div><dt>Integrity</dt><dd>Server-side grading only</dd></div>
+              <div><dt>Concurrency</dt><dd>Idempotency keys · row locks</dd></div>
+              <div><dt>Content</dt><dd>Role-based authoring CMS</dd></div>
+              <div><dt>Uploads</dt><dd>MIME sniffing · content hashing</dd></div>
             </dl>
           </aside>
         </article>
@@ -233,13 +239,13 @@
           <article class="timeline-item reveal">
             <span class="timeline-date">29/05/2026 — 29/05/2028</span>
             <h3>TOEIC — 830 / 990</h3>
-            <p>English proficiency for professional environments.</p>
+            <p>English proficiency for professional environments — enough to build features straight from official English documentation. <a href="https://drive.google.com/file/d/1K-GS0L74ed6g6hYq7x1Pk7j2fplUJRuN/view?usp=drive_link" target="_blank" rel="noreferrer">View certificate ↗</a></p>
             <div class="chips"><span>Listening &amp; Reading</span></div>
           </article>
           <article class="timeline-item reveal">
             <span class="timeline-date">11/12/2024 — 11/12/2026</span>
             <h3>Duolingo English Test — 100 / 160</h3>
-            <p>Certified English communication skills.</p>
+            <p>Certified English communication skills. <a href="https://certs.duolingo.com/12aj0t4p4mz1bw8l" target="_blank" rel="noreferrer">View certificate ↗</a></p>
             <div class="chips"><span>English</span></div>
           </article>
         </div>
